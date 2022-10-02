@@ -16,7 +16,7 @@ export function Candidato(props: Candidato) {
 
       <div className="nome">
         <h2>Porcemtagem:</h2>
-        <h2 className="h2">{props.per}</h2>
+        <h2 className="h2">{props.per}%</h2>
       </div>
 
       <div className="nome">
