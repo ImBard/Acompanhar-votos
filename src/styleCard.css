@@ -1,0 +1,16 @@
+.candidato {
+  margin-top: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.nome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+}
+
+.h2 {
+  font-weight: 400;
+}
+
