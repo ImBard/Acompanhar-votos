@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <div className="card">
         <h1>Votação Presidente 2022</h1>
-
+        <button className='button' onClick={getitem}>Atualizar votos</button>
         {data?.map(item => {
           return (
             <Candidato
