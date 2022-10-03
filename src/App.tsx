@@ -38,7 +38,7 @@ function App() {
         })
 
         }
-
+        <footer>By Talison Cardoso</footer>
       </div>
     </div>
   )

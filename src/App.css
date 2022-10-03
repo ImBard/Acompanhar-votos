@@ -24,3 +24,11 @@
   margin-top: 200px;
 
 }
+
+footer {
+  text-align: center;
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
