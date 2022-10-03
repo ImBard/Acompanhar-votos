@@ -3,9 +3,15 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import { Candidato } from './components/candidato'
 
+interface Candidato {
+  nm: string;
+  pvap: string;
+  vot: string;
+  vap: string;
+  seq: string
+}
 function App() {
-
-  const [data, setData] = useState<any[]>();
+  const [data, setData] = useState<Candidato[]>([]);
   const [urnas, setUrnas] = useState<string>('');
   useEffect(() => {
     getitem()
@@ -21,7 +27,6 @@ function App() {
       .catch((error) => {
         console.log(error)
       })
-    console.log(urnas)
   }
 
   return (
@@ -33,7 +38,7 @@ function App() {
             <button className='button' onClick={getitem}>Atualizar votos</button>
             <p>Porcentagem das urnas apuradas: {urnas}%</p>
           </div>
-          {data?.map(item => {
+          {data.map(item => {
             return (
               <Candidato
                 name={item.nm}
