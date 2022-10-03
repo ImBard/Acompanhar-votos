@@ -6,23 +6,37 @@
   font-family: "Quicksand";
 }
 
+.main {
+  background-color: #555;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: white;
+  margin: 20px 0 0 0;
+}
+
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #555;
   overflow: hidden;
+  height: 100vh;
 }
 
 .card {
   background-color: white;
-  padding: 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  margin-top: 200px;
-
+  max-height: 600px;
+  max-width: 500px;
+  width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  border: 1px solid gray;
 }
 
 footer {
@@ -30,7 +44,7 @@ footer {
   background-color: gray;
   color: white;
   padding: 10px;
-  margin-top: 10px;
+  width: 100%;
 }
 
 .button {
@@ -39,11 +53,41 @@ footer {
   padding: 10px;
   margin: 10px;
   font-size: 25px;
+  background-color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .button:hover {
-  background-color: gray;
+  background-color: rgb(104, 104, 104);
   border: 1px solid white;
   transition: 0.5s;
-  color: white;
+  color: rgb(255, 255, 255);
+}
+
+.button:hove
+
+::-webkit-scrollbar {
+  overflow: overlay;
+  width: 10px;
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: inherit;
+}
+
+::-webkit-scrollbar-track {
+  display: initial;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #60656b;
+  border-radius: 5px;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  background-color: #c2c3c5;
+  position: sticky;
+  width: 100%;
+  max-width: inherit;
+  top: 0;
 }

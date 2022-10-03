@@ -22,22 +22,26 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div className="card">
+    <div className="main">
+      <div className="App">
         <h1>Votação Presidente 2022</h1>
-        <button className='button' onClick={getitem}>Atualizar votos</button>
-        {data?.map(item => {
-          return (
-            <Candidato
-              name={item.nm}
-              per={item.pvap}
-              vot={item.vap}
-              key={item.seq}
-            />
-          )
-        })
+        <div className="card">
+          <div className='head'>
+            <button className='button' onClick={getitem}>Atualizar votos</button>
+          </div>
+          {data?.map(item => {
+            return (
+              <Candidato
+                name={item.nm}
+                per={item.pvap}
+                vot={item.vap}
+                key={item.seq}
+              />
+            )
+          })
 
-        }
+          }
+        </div>
         <footer>By Talison Cardoso</footer>
       </div>
     </div>
