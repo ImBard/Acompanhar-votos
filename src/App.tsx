@@ -6,6 +6,7 @@ import { Candidato } from './components/candidato'
 function App() {
 
   const [data, setData] = useState<any[]>();
+  const [urnas, setUrnas] = useState<string>('');
   useEffect(() => {
     getitem()
   }, [])
@@ -15,10 +16,12 @@ function App() {
       .then((response) => {
         console.log(response.data)
         setData(response.data.cand)
+        setUrnas(response.data.pst)
       })
       .catch((error) => {
         console.log(error)
       })
+    console.log(urnas)
   }
 
   return (
@@ -28,6 +31,7 @@ function App() {
         <div className="card">
           <div className='head'>
             <button className='button' onClick={getitem}>Atualizar votos</button>
+            <p>Porcentagem das urnas apuradas: {urnas}%</p>
           </div>
           {data?.map(item => {
             return (
@@ -39,7 +43,6 @@ function App() {
               />
             )
           })
-
           }
         </div>
         <footer>By Talison Cardoso</footer>

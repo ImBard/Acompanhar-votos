@@ -81,10 +81,17 @@ footer {
 
 .head {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #c2c3c5;
   position: sticky;
   width: 100%;
   max-width: inherit;
   top: 0;
+  align-items: center;
+}
+
+.head p {
+  font-size: larger;
+  font-weight: 600;
 }
