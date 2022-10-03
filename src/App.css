@@ -46,7 +46,6 @@ footer {
   padding: 10px;
   width: 100%;
 }
-
 .button {
   border: 1px solid gray;
   border-radius: 10px;
@@ -63,8 +62,6 @@ footer {
   transition: 0.5s;
   color: rgb(255, 255, 255);
 }
-
-.button:hove
 
 ::-webkit-scrollbar {
   overflow: overlay;
