@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="main">
       <div className="App">
-        <h1>Votação Presidente 2022</h1>
+        <h1 className='h1'>Votação Presidente 2022</h1>
         <div className="card">
           <div className='head'>
             <button className='button' onClick={getitem}>Atualizar votos</button>
