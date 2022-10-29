@@ -19,7 +19,6 @@
   align-items: center;
   background-color: #EDEDED;
   overflow: hidden;
-  height: 100vh;
 }
 
 footer {
@@ -82,11 +81,12 @@ footer {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   width: 100%;
   gap: 10px;
   padding-block: 20px;
+  height: 100%;
 }
 
 .card {
@@ -171,14 +171,15 @@ main {
 }
 
 @media only screen and (max-width: 600px) {
-  .card img {
-    width: 45%;
-  }
 
   .card {
     width: 90%;
   }
   .per {
     width: 90%;
+  }
+
+  .h1 {
+    font-size: 26px;
   }
 }

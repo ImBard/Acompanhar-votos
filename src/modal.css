@@ -5,7 +5,19 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  overflow: hidden;
   align-items: center;
+  position: fixed;
+  overflow-y: scroll;
+  inset: 0;
+}
+
+[aria-hidden="true"] {
+  display: none;
+}
+
+[aria-hidden="false"] {
+  display: block;
 }
 
 .cardModal {
@@ -49,7 +61,7 @@
   background-color: rgb(247, 247, 247);
 }
 
-.cardModal > img {
+.cardModal>img {
   height: 130px;
   width: 130px;
   border-radius: 50%;
