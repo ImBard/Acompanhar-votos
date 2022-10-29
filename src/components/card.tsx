@@ -1,5 +1,3 @@
-
-
 interface Cand {
   name: string;
   per: string;
