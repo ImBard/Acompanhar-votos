@@ -35,7 +35,14 @@ function App(props: any) {
 
   function getitem() {
     setAtt(false)
-    axios.get('https://resultados.tse.jus.br/oficial/ele2022/545/dados-simplificados/br/br-c0001-e000545-r.json')
+    axios({
+      url: 'https://resultados.tse.jus.br/oficial/ele2022/545/dados-simplificados/br/br-c0001-e000545-r.json',
+      method: "GET",
+      timeout: 5000,
+      headers: {
+        Accept: 'application/json'
+      }
+    })
       .then((response: { data: { cand: SetStateAction<Candidato[]>; pst: string; st: SetStateAction<string>; }; }) => {
         setData(response.data.cand)
         setUrnas(response.data.pst.replace(',', "."))
