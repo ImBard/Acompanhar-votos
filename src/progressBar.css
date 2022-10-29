@@ -1,0 +1,21 @@
+.containerStyles {
+  height: 20px;
+  width: 400px;
+  background-color: #e0e0de;
+  border-radius: 50px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.fillerStyles {
+  height: 100%;
+  border-radius: inherit;
+  text-align: right;
+  transition: width 1s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .containerStyles {
+    width: 90%;
+  }
+}

@@ -1,0 +1,84 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardModal {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 40px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 30%;
+}
+
+.cardModal hr {
+  width: 100%;
+  margin: 60px 0 40px 0;
+}
+
+.votos {
+  text-align: center;
+  color: rgb(204, 72, 204);
+  font-weight: 600;
+  font-size: large;
+}
+
+.top {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.top button {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.top button:hover {
+  background-color: rgb(247, 247, 247);
+}
+
+.cardModal > img {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  border: 4px solid rgb(179, 152, 179);
+  margin-bottom: 25px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  gap: 15px
+}
+
+.cardModal label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: large;
+}
+
+.cardModal label span {
+  font-weight: 500;
+  font-size: medium;
+}
+
+@media only screen and (max-width: 600px) {
+  .cardModal {
+    width: 90%;
+  }
+}
