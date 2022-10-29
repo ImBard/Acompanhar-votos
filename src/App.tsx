@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { useEffect, useState } from 'react'
+import { SetStateAction, useEffect, useState } from 'react'
 import './App.css'
 import { Candidato } from './components/card'
 import lula from "./assets/lula.jpeg";
@@ -36,16 +36,14 @@ function App(props: any) {
   function getitem() {
     setAtt(false)
     axios.get('https://resultados.tse.jus.br/oficial/ele2022/545/dados-simplificados/br/br-c0001-e000545-r.json')
-      .then((response) => {
-        console.log(response.data.pst)
+      .then((response: { data: { cand: SetStateAction<Candidato[]>; pst: string; st: SetStateAction<string>; }; }) => {
         setData(response.data.cand)
         setUrnas(response.data.pst.replace(',', "."))
         setTotVot(response.data.st)
         setAtt(true)
-        console.log(response.data.pst.slice(1,2))
       })
-      .catch((error) => {
-        console.log(error)
+      .catch((error: any) => {
+        console.error(error)
       })
   }
 
