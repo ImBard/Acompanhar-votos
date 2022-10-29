@@ -9,6 +9,7 @@
 .h1 {
   color: #52127a;
   margin: 20px 0 10px 0;
+  font-weight: bolder;
 }
 
 .App {
@@ -155,6 +156,7 @@ main {
   border-radius: 10px;
   margin-bottom: 10px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  color: #52127a;
 }
 
 .per span {
